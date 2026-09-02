@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
 
 :root {
-  --color-background: #faf7f5;
-  --color-text: #1e1b1d;
-  --color-primary: #6b3f5b;
+  --color-background: #151218;
+  --color-text: #f5f0f7;
+  --color-primary: #a878d6;
+  --color-primary-hover: #b98ae3;
   --color-lavender: #c9b6e4;
-  --color-lavender-mist: #f1ecf7;
-  --color-white: #ffffff;
+  --color-lavender-mist: #211b26;
+  --color-white: #29232f;
+  --color-muted-text: #b9afbf;
+  --color-surface: #211b26;
+  --color-surface-elevated: #29232f;
+  --color-border: #4a4053;
 }
 
 * {

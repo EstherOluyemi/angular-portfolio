@@ -2,36 +2,29 @@
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5%;
+    padding: 1.25rem 8%;
 }
 .logo {
     color: var(--color-primary);
     font-family: 'Manrope', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
+    letter-spacing: -0.03em;
     text-decoration: none;
 }
 .nav-links {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.5rem;
 }
 .nav-links a {
+    position: relative;
     color: var(--color-text);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 .nav-links a:hover {
   color: var(--color-primary);
-}
-
-.talk-button {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: 0.75rem 1.25rem;
-  border-radius: 999px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
 }
