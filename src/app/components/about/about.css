@@ -1,0 +1,65 @@
+.about{
+    padding: 6rem 8%;
+}
+.about-header{
+    max-width: 700px;
+    margin-bottom: 4rem;
+}
+.section-label{
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+.about-header h2{
+    color: var(--text-color);
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+.about-content{
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+}
+.about-text,
+.about-highlights{
+    flex:1;
+}
+.about-text{
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+.about-highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.highlight-cards {
+    padding: 1.75rem;
+    background-color: var(--color-lavender-mist);
+    border: 1px solid var(--color-lavender);
+    border-radius: 1rem;
+}
+.highlight-cards p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width:768px) {
+    .about{
+        padding: 4rem 6%;
+    }
+    .about-content{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .about-highlights{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

@@ -1,0 +1,41 @@
+.footer {
+  padding: 2.5rem 8%;
+  background-color: var(--color-text);
+  color: var(--color-white);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-name {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.back-to-top {
+  color: var(--color-lavender);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+}

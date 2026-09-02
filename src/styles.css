@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  --color-background: #faf7f5;
+  --color-text: #1e1b1d;
+  --color-primary: #6b3f5b;
+  --color-lavender: #c9b6e4;
+  --color-lavender-mist: #f1ecf7;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3{
+  font-family: 'Manrope', sans-serif;
+}
+
+a{
+  color: inherit;
+}
+
+button,
+a{
+  -webkit-tap-highlight-color: transparent;
+}
