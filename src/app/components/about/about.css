@@ -6,30 +6,33 @@
     margin-bottom: 4rem;
 }
 .section-label{
-    color: var(--primary-color);
+    color: var(--color-primary);
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem;
 }
 .about-header h2{
-    color: var(--text-color);
+    color: var(--color-text);
     font-family: 'Manrope', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
 }
 .about-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 0.09fr) minmax(0, 1,1fr);
     gap: 5rem;
-    align-items: flex-start;
+    align-items: start;
 }
 .about-text,
 .about-highlights{
     flex:1;
 }
 .about-text{
+    max-width: 560px;
+    color: var(--color-muted-text);
     font-size: 1.05rem;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 .about-text p {
   margin-bottom: 1.5rem;
@@ -41,13 +44,25 @@
 }
 .highlight-cards {
     padding: 1.75rem;
-    background-color: var(--color-lavender-mist);
-    border: 1px solid var(--color-lavender);
-    border-radius: 1rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1.25rem;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.highlight-cards:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
 }
 .highlight-cards p{
+    color: var(--color-muted-text);
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.7;
+}
+.highlight-cards h3 {
+  color: var(--color-text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width:768px) {

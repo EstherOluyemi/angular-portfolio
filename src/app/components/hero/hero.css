@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 8%;
-  min-height: 80vh;
-  gap: 4rem;
+  padding: 6rem 8%;
+  min-height: 85vh;
+  gap: 5rem;
+  position: relative;
 }
 
 .hero-content {
@@ -13,9 +14,10 @@
 
 .eyebrow {
   color: var(--color-primary);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
 }
 
 .hero h1 {
@@ -35,11 +37,11 @@
 }
 
 .hero-description {
-  max-width: 550px;
-  color: var(--color-text);
+  max-width: 540px;
+  color: var(--color-muted-text);
   font-size: 1.05rem;
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .hero-actions {
@@ -48,9 +50,10 @@
 }
 
 .hero-actions a {
-  padding: 0.85rem 1.5rem;
+  padding: 0.9rem 1.6rem;
   border-radius: 999px;
   font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -58,11 +61,12 @@
 
 .hero-actions a:first-child {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-background);
 }
 
 .hero-actions a:first-child:hover {
-  opacity: 0.85;
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
 }
 
 .hero-actions a:last-child {
@@ -75,12 +79,15 @@
 }
 
 .hero-image {
-  width: 380px;
+  width: 400px;
   aspect-ratio: 3 / 4;
   flex-shrink: 0;
   background-color: var(--color-lavender);
   border-radius: 12rem 12rem 2rem 2rem;
   overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow:  0 25px 60px rgba(0, 0, 0, 0.3),
+  0 0 80px rgba(168, 120, 214, 0.12);
 }
 
 .hero-image img {
