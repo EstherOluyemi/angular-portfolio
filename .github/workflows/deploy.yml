@@ -29,11 +29,14 @@ jobs:
           node-version: 22
           cache: npm
 
-      - - name: Install dependencies
-          run: npm ci --legacy-peer-deps
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
 
       - name: Build Angular application
         run: npm run build -- --base-href /angular-portfolio/
+
+      - name: Create 404.html for GitHub Pages routing fallback
+        run: cp dist/my-portfolio/index.html dist/my-portfolio/404.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -41,7 +44,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/my-portfolio/browser
+          path: dist/my-portfolio
 
   deploy:
     needs: build
